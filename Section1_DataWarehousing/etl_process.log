@@ -1,0 +1,107 @@
+2025-08-13 16:02:03,541 - INFO - ============================================================
+2025-08-13 16:02:03,541 - INFO - STARTING COMPLETE ETL PROCESS
+2025-08-13 16:02:03,541 - INFO - ============================================================
+2025-08-13 16:02:03,557 - INFO - STAGE 1: DATA GENERATION & EXTRACTION
+2025-08-13 16:02:03,557 - INFO - Generating 1000 rows of synthetic retail data...
+2025-08-13 16:02:03,712 - INFO - Generated dataset shape: (1000, 8)
+2025-08-13 16:02:03,712 - INFO - Date range: 2023-01-01 23:54:35 to 2023-12-29 09:00:38
+2025-08-13 16:02:03,712 - INFO - Unique customers: 181
+2025-08-13 16:02:03,728 - INFO - Unique products: 1000
+2025-08-13 16:02:03,728 - INFO - Starting data extraction phase...
+2025-08-13 16:02:03,750 - INFO - Extraction complete:
+2025-08-13 16:02:03,750 - INFO -   - Original rows: 1000
+2025-08-13 16:02:03,750 - INFO -   - Missing values filled: 20
+2025-08-13 16:02:03,750 - INFO -   - Final rows: 1000
+2025-08-13 16:02:03,750 - INFO -   - Rows removed: 0
+2025-08-13 16:02:03,750 - INFO - STAGE 2: DATA TRANSFORMATION
+2025-08-13 16:02:03,750 - INFO - Starting data transformation phase...
+2025-08-13 16:02:03,849 - INFO - Transformation complete:
+2025-08-13 16:02:03,849 - INFO -   - Sales Fact records: 2905
+2025-08-13 16:02:03,849 - INFO -   - Customer Dimension records: 425
+2025-08-13 16:02:03,849 - INFO -   - Product Dimension records: 1000
+2025-08-13 16:02:03,849 - INFO -   - Time Dimension records: 257
+2025-08-13 16:02:03,849 - INFO - STAGE 3: DATA LOADING
+2025-08-13 16:02:03,864 - INFO - Starting data loading to retail_dw.db...
+2025-08-13 16:02:03,947 - INFO - Database schema created successfully
+2025-08-13 16:02:03,966 - ERROR - Load phase failed: table CustomerDim has no column named CustomerKey
+2025-08-13 16:02:03,968 - INFO - ============================================================
+2025-08-13 16:02:03,970 - INFO - ETL PROCESS COMPLETED
+2025-08-13 16:02:03,970 - INFO - Status: FAILED
+2025-08-13 16:02:03,970 - INFO - Total Duration: 0.43 seconds
+2025-08-13 16:02:03,970 - INFO - Rows Processed: 1000 → 1000 → 2905
+2025-08-13 16:02:03,985 - INFO - ============================================================
+2025-08-13 16:04:57,887 - INFO - ============================================================
+2025-08-13 16:04:57,887 - INFO - STARTING COMPLETE ETL PROCESS
+2025-08-13 16:04:57,887 - INFO - ============================================================
+2025-08-13 16:04:57,903 - INFO - STAGE 1: DATA GENERATION & EXTRACTION
+2025-08-13 16:04:57,903 - INFO - Generating 1000 rows of synthetic retail data...
+2025-08-13 16:04:58,048 - INFO - Generated dataset shape: (1000, 8)
+2025-08-13 16:04:58,048 - INFO - Date range: 2023-01-04 04:13:08 to 2023-12-30 18:23:29
+2025-08-13 16:04:58,063 - INFO - Unique customers: 177
+2025-08-13 16:04:58,063 - INFO - Unique products: 999
+2025-08-13 16:04:58,063 - INFO - Starting data extraction phase...
+2025-08-13 16:04:58,079 - INFO - Extraction complete:
+2025-08-13 16:04:58,079 - INFO -   - Original rows: 1000
+2025-08-13 16:04:58,079 - INFO -   - Missing values filled: 20
+2025-08-13 16:04:58,079 - INFO -   - Final rows: 1000
+2025-08-13 16:04:58,079 - INFO -   - Rows removed: 0
+2025-08-13 16:04:58,079 - INFO - STAGE 2: DATA TRANSFORMATION
+2025-08-13 16:04:58,095 - INFO - Starting data transformation phase...
+2025-08-13 16:04:58,171 - INFO - Transformation complete:
+2025-08-13 16:04:58,187 - INFO -   - Sales Fact records: 3101
+2025-08-13 16:04:58,187 - INFO -   - Customer Dimension records: 419
+2025-08-13 16:04:58,187 - INFO -   - Product Dimension records: 1000
+2025-08-13 16:04:58,187 - INFO -   - Time Dimension records: 245
+2025-08-13 16:04:58,187 - INFO - STAGE 3: DATA LOADING
+2025-08-13 16:04:58,187 - INFO - Starting data loading to retail_dw.db...
+2025-08-13 16:04:58,187 - INFO - Removed existing database: retail_dw.db
+2025-08-13 16:04:58,303 - INFO - Database schema created successfully from warehouse_schema.sql
+2025-08-13 16:04:58,423 - INFO -   - CustomerDim: 419 rows loaded
+2025-08-13 16:04:58,424 - INFO -   - ProductDim: 1000 rows loaded
+2025-08-13 16:04:58,424 - INFO -   - TimeDim: 245 rows loaded
+2025-08-13 16:04:58,424 - INFO -   - SalesFact: 3101 rows loaded
+2025-08-13 16:04:58,442 - INFO - ✅ All foreign key constraints verified
+2025-08-13 16:04:58,442 - INFO - ✅ Data successfully loaded to retail_dw.db
+2025-08-13 16:04:58,442 - INFO - ============================================================
+2025-08-13 16:04:58,442 - INFO - ETL PROCESS COMPLETED
+2025-08-13 16:04:58,442 - INFO - Status: SUCCESS
+2025-08-13 16:04:58,456 - INFO - Total Duration: 0.56 seconds
+2025-08-13 16:04:58,458 - INFO - Rows Processed: 1000 → 1000 → 3101
+2025-08-13 16:04:58,458 - INFO - ============================================================
+2025-08-13 17:34:52,869 - INFO - ============================================================
+2025-08-13 17:34:52,873 - INFO - STARTING COMPLETE ETL PROCESS
+2025-08-13 17:34:52,873 - INFO - ============================================================
+2025-08-13 17:34:52,877 - INFO - STAGE 1: DATA GENERATION & EXTRACTION
+2025-08-13 17:34:52,880 - INFO - Generating 1000 rows of synthetic retail data...
+2025-08-13 17:34:53,042 - INFO - Generated dataset shape: (1000, 8)
+2025-08-13 17:34:53,056 - INFO - Date range: 2023-01-01 23:54:35 to 2023-12-29 09:00:38
+2025-08-13 17:34:53,073 - INFO - Unique customers: 181
+2025-08-13 17:34:53,078 - INFO - Unique products: 1000
+2025-08-13 17:34:53,087 - INFO - Starting data extraction phase...
+2025-08-13 17:34:53,137 - INFO - Extraction complete:
+2025-08-13 17:34:53,137 - INFO -   - Original rows: 1000
+2025-08-13 17:34:53,142 - INFO -   - Missing values filled: 20
+2025-08-13 17:34:53,145 - INFO -   - Final rows: 1000
+2025-08-13 17:34:53,154 - INFO -   - Rows removed: 0
+2025-08-13 17:34:53,162 - INFO - STAGE 2: DATA TRANSFORMATION
+2025-08-13 17:34:53,165 - INFO - Starting data transformation phase...
+2025-08-13 17:34:53,342 - INFO - Transformation complete:
+2025-08-13 17:34:53,344 - INFO -   - Sales Fact records: 2905
+2025-08-13 17:34:53,350 - INFO -   - Customer Dimension records: 425
+2025-08-13 17:34:53,353 - INFO -   - Product Dimension records: 1000
+2025-08-13 17:34:53,355 - INFO -   - Time Dimension records: 257
+2025-08-13 17:34:53,357 - INFO - STAGE 3: DATA LOADING
+2025-08-13 17:34:53,359 - INFO - Starting data loading to retail_dw.db...
+2025-08-13 17:34:53,373 - INFO - Removed existing database: retail_dw.db
+2025-08-13 17:34:53,525 - INFO - Database schema created successfully from warehouse_schema.sql
+2025-08-13 17:34:53,645 - INFO -   - CustomerDim: 425 rows loaded
+2025-08-13 17:34:53,650 - INFO -   - ProductDim: 1000 rows loaded
+2025-08-13 17:34:53,654 - INFO -   - TimeDim: 257 rows loaded
+2025-08-13 17:34:53,657 - INFO -   - SalesFact: 2905 rows loaded
+2025-08-13 17:34:53,666 - INFO -  All foreign key constraints verified
+2025-08-13 17:34:53,669 - INFO -  Data successfully loaded to retail_dw.db
+2025-08-13 17:34:53,673 - INFO - ============================================================
+2025-08-13 17:34:53,675 - INFO - ETL PROCESS COMPLETED
+2025-08-13 17:34:53,677 - INFO - Status: SUCCESS
+2025-08-13 17:34:53,681 - INFO - Total Duration: 0.80 seconds
+2025-08-13 17:34:53,882 - INFO - ============================================================

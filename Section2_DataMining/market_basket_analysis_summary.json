@@ -1,0 +1,10 @@
+{
+  "transactions_count": 2905,
+  "unique_products": 987,
+  "frequent_itemsets_count": 1,
+  "association_rules_count": 0,
+  "min_support_used": 0.005,
+  "avg_confidence": 0,
+  "avg_lift": 0,
+  "strong_rules_count": 0
+}
